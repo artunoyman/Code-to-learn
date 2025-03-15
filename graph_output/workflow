@@ -1,0 +1,14 @@
+// Workflow Process
+digraph {
+	rankdir=LR
+	A [label=Start shape=oval]
+	B [label="Process 1" shape=box]
+	C [label=Decision shape=diamond]
+	D [label="Process 2" shape=box]
+	E [label=End shape=oval]
+	A -> B [label=begin]
+	B -> C [label=evaluate]
+	C -> D [label=yes]
+	C -> B [label=no constraint=false]
+	D -> E [label=complete]
+}

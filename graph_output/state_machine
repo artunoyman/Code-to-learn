@@ -1,0 +1,16 @@
+// State Machine
+digraph {
+	rankdir=LR
+	node [fillcolor=lightgray fontname=Arial shape=circle style=filled]
+	S0 [label=Idle shape=doublecircle]
+	S1 [label=Working]
+	S2 [label=Waiting]
+	S3 [label=Error fillcolor=lightpink]
+	S0 -> S1 [label=start]
+	S1 -> S2 [label=pause]
+	S2 -> S1 [label=resume]
+	S1 -> S3 [label=error]
+	S3 -> S0 [label=reset]
+	S1 -> S0 [label=complete]
+	S2 -> S0 [label=cancel]
+}

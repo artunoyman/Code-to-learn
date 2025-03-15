@@ -1,0 +1,26 @@
+// Network Topology
+digraph {
+	rankdir=TB
+	node [fontname=Arial fontsize=10]
+	router [label=Router shape=box3d]
+	subgraph cluster_servers {
+		label="Server Farm"
+		s1 [label="Web Server" shape=cylinder]
+		s2 [label=Database shape=cylinder]
+		s3 [label=Cache shape=cylinder]
+	}
+	subgraph cluster_clients {
+		label=Clients
+		c1 [label="Client 1" shape=box]
+		c2 [label="Client 2" shape=box]
+		c3 [label="Client 3" shape=box]
+	}
+	router -> s1
+	router -> s2
+	router -> s3
+	c1 -> router
+	c2 -> router
+	c3 -> router
+	s1 -> s2
+	s1 -> s3
+}

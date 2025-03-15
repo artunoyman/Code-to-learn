@@ -1,0 +1,20 @@
+// Styled Graph
+digraph {
+	rankdir=TB
+	node [fillcolor=lightblue fontname=Arial shape=box style="rounded,filled"]
+	edge [arrowsize=0.7 color="#444444" fontname=Arial fontsize=10]
+	subgraph cluster_0 {
+		color=blue label="Module A" style=rounded
+		A1 [label="Process A1"]
+		A2 [label="Process A2"]
+		A1 -> A2
+	}
+	subgraph cluster_1 {
+		color=red label="Module B" style=rounded
+		B1 [label="Process B1"]
+		B2 [label="Process B2"]
+		B1 -> B2
+	}
+	A2 -> B1 [label="data flow"]
+	B2 -> A1 [label=feedback style=dashed]
+}
