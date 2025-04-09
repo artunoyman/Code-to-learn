@@ -8,13 +8,19 @@ It is structured into two main folders:
 - **ml_scripts** – Machine Learning models and experiments
 - **stats_scripts** – Statistical concepts and simulations
 
-Unlike typical repositories that aim to optimize models or showcase polished results, **the goal here is experimentation and intuition building**.  
-I explore how models behave under different scenarios by changing parameters, modifying synthetic datasets, or altering algorithm internals.
+**Unlike typical repositories focused on optimizing models or showcasing polished results, this project emphasizes experimentation and intuition building.**  
 
-All scripts and notebooks are originally created by me — either fully written or heavily adapted based on my own understanding, often including:
+Models are re-implemented or adapted to explore their behavior under different scenarios, through:
+- Changing model parameters
+- Modifying synthetic datasets
+- Altering internal algorithm structures
+
+Many notebooks also include:
 - Unique visualizations
 - Custom diagnostic measures
-- Internal dynamics exploration
+- Internal dynamic explorations
+
+
 
 ## Why This Repository?
 - To **understand** models, not just use them.
