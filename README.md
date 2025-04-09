@@ -1,5 +1,7 @@
 # Code-to-Learn
 
+Hands-on machine learning and statistics experiments to build intuition through coding from scratch.
+
 ## Overview
 This repository is a personal study project designed to deepen my understanding of machine learning and statistical modeling through **hands-on coding from scratch**.  
 It is structured into two main folders:
